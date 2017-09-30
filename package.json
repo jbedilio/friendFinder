@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friendfinder",
+  "main": "home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbedilio/friendFinder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder",
+    "friendfinder"
+  ],
+  "author": "joshuambedilion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbedilio/friendFinder/issues"
+  },
+  "homepage": "https://github.com/jbedilio/friendFinder#readme"
+}
