@@ -42,24 +42,36 @@
             </div>
         </section>
 
-        <script>
+
+
+        <script type='text/javascript'>
+
             $('#submit').on('click', () => {
 
-                var name = $('#name').val().trim();
-                var age = $('#age').val().trim();
+                event.preventDefault();
 
+                var newSuper = {
 
-            })
+                name: $('#name').val().trim(),
 
+                age: $('#age').val().trim(),
 
+                power: $('#power').val().trim(),
+
+                }
+            });
+
+            $.post('/api/add', newSuper)
+
+            .done((data) => {
+
+                console.log(data);
+
+                alert('adding new super . . .');
+
+            });
 
         </script>
-
-
-
-
-    
-    <script src='assets/javascript/game.js'></script>
 </body>
 
 </html>
