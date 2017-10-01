@@ -26,76 +26,91 @@
         </section>
 
         <section class="container">
-            <div clall='container'>
-                <div class="row">
-                    <div class='col-lg-12 text-left'>
-                        <form action='/api/add' method="POST">
-                            Name:<br>
-                            <input type="text" name="first+lastName" id="name"><br>
-                            Alias:<br>
-                            <input type="text" name="alias" id="alias"><br>
-                            Age:<br>
-                            <input type="number" name="age" id="age"><br>
-                            Super Power:<br>
-                            <input type="text" name="power" id="power"><br>
-                            <br>
-                            <button type="submit" class="btn btn-danger" id='submit'>Submit</button>
-                        </form>
-                    </div>
+            <div class="row">
+                <div class='col-lg-12 text-left'>
+                    <form action='/api/add' method="POST">
+                        Name:<br>
+                        <input type="text" name="name" id="name"><br>
+                        Alias:<br>
+                        <input type="text" name="alias" id="alias"><br>
+                        Age:<br>
+                        <input type="number" name="age" id="age"><br>
+                        Super Power:<br>
+                        <input type="text" name="power" id="power"><br>
+                        <br>
+                        <button type="submit" class="btn btn-danger" id='submit'>Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-lg">
+        <section class="contaienr" id="modal">
+            <div class="row">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Your match!</h4>
+                        <h4 class="modal-title">Your Match!</h4>
                     </div>
                     <div class="modal-body">
-                        <p>This is a large modal.</p>
+                        <p id="modal-p">Some text in the modal.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+        </section>
+
+        
+    </div>
 
 
 
 
-        <script type='text/javascript'>
+    <script type='text/javascript'>
 
-            $('#submit').on('click', () => {
+    $('#modal').hide();
 
-                console.log('btn test');
-                //event.preventDefault();
+        $('#submit').on('click', () => {
 
-                var newSuper = {
+            console.log('btn test');
+            //event.preventDefault();
 
-                name: $('#name').val().trim(),
+            var newSuper = {
 
-                alias: $('#alias').val().trim(),
+            name: $('#name').val().trim(),
 
-                age: $('#age').val().trim(),
+            alias: $('#alias').val().trim(),
 
-                power: $('#power').val().trim()
+            age: $('#age').val().trim(),
 
-                }
-            });
+            power: $('#power').val().trim()
 
-            $.post('/api/add', newSuper)
+            }
 
-            .done((data) => {
+            name: $('#name').empty();
 
-                console.log(data);
+            alias: $('#alias').empty();
 
-                alert('adding new super . . .');
+            age: $('#age').empty();
 
-            });
+            power: $('#power').empty();
+            
+        });
+
+        $.post('/api/add', newSuper)
+
+        .done((data) => {
+
+            console.log(data);
+
+            $('#modal').show();
+            
+            $('#modal-p').append(newSuper.name + '\n' + 
+                newSuper.alia + '\n' + newSuper.age + '\n' + 
+                newSuper.power);
+
+        });
 
         </script>
 </body>
