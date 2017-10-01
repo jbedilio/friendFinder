@@ -10,11 +10,55 @@
 
     <title>Survey</title>
 </head>
-
 <body>
+    <div class='container'>
+        <section class='container'>
+            <div class='row'>
+                <div class='col-lg-12 text-center'>
+                    <h1>About you</h1>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-lg-12 text-center'>
+                    <h2>Answer some questions so other supers can get to know you.</h2>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div clall='container'>
+                <div class="row">
+                    <div class='col-lg-12 text-left'>
+                        <form method="post">
+                            First & Last Name:<br>
+                            <input type="text" name="first+lastName" id="name"><br>
+                            Age:<br>
+                            <input type="number" name="age" id="age"><br>
+                            Super Power:<br>
+                            <input type="text" name="power" id="power"><br>
+                            <button type="submit" class="btn btn-danger" id='submit'>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            $('#submit').on('click', () => {
+
+                var name = $('#name').val().trim();
+                var age = $('#age').val().trim();
+
+
+            })
 
 
 
+        </script>
+
+
+
+
+    
     <script src='assets/javascript/game.js'></script>
 </body>
 

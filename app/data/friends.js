@@ -1,10 +1,10 @@
 var supers = [
         
             {
-                name:       'Batman',
-                age:         30,
-                occupation: 'Millionare',
-                q1:          3
+                name:  'batman',
+                age:    30,
+                power: 'martial arts & tech gadgets',
+                q1:     3
             }
 ];
 

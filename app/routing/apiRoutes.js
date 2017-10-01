@@ -4,20 +4,29 @@ var bp = require('body-parser');
 
 var path = require('path');
 
-app.get('/api/supers', (req, res) => {
-    res.json(supers);
+var app = express();
 
-});
+var supers = require('./../data/friends.js');
 
-app.post('/api/add', (req, res) => {
+function apiR(app, __dirname) {
 
-    var newSuper = req.body;
+    app.get('/api/supers', (req, res) => {
+        
+        res.json(supers);
 
-    console.log(newSuper);
+    });
 
-    supers.push(newSuper);
+    app.post('/api/add', (req, res) => {
 
-    res.json(newSuper);
-})
+        var newSuper = req.body;
+
+        console.log(newSuper);
+
+        supers.push(newSuper);
+
+        res.json(newSuper);
+    });
+    console.log("yo!");
+};
 
 module.exports = apiR;
