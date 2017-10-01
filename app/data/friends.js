@@ -1,7 +1,8 @@
 var supers = [
         
             {
-                name:  'batman',
+                name:   'bruce wayne',
+                alias:  'batman',
                 age:    30,
                 power: 'martial arts & tech gadgets',
                 q1:     3
