@@ -26,6 +26,8 @@ function apiR(app, __dirname) {
 
         res.json(newSuper);
     });
+
+    
     console.log("yo!");
 };
 

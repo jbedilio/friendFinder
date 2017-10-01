@@ -17,7 +17,9 @@ function htmlR(app, __dirname) {
     });
 
     app.get('/survey', (req, res) => {
+
         res.sendFile(path.join(__dirname, './app/public/survey.html'));
+        
     });
     console.log('yo!');
 };

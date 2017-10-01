@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Survey</title>
 </head>
 <body>
     <div class='container'>
+
         <section class='container'>
             <div class='row'>
                 <div class='col-lg-12 text-center'>
@@ -24,12 +24,13 @@
                 </div>
             </div>
         </section>
+
         <section class="container">
             <div clall='container'>
                 <div class="row">
                     <div class='col-lg-12 text-left'>
                         <form action='/api/add' method="POST">
-                            First & Last Name:<br>
+                            Name:<br>
                             <input type="text" name="first+lastName" id="name"><br>
                             Alias:<br>
                             <input type="text" name="alias" id="alias"><br>
@@ -44,6 +45,25 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Your match!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a large modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
 
 
 
