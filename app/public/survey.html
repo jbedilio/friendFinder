@@ -10,7 +10,7 @@
     <title>Survey</title>
 </head>
 <body>
-    <div class='container'>
+    <div class='container' id='page'>
 
         <section class='container'>
             <h1>About you</h1>
@@ -19,42 +19,38 @@
         </section>
 
         <section class="container">
-            <!--<form action='/api/add' method="POST" id="form">-->
+            <form role="form" action="/api/add" method="POST">
                 Name:<br>
                 <input type="text" name="name" id="name" class='form-control'><br>
                 Alias:<br>
                 <input type="text" name="alias" id="alias" class='form-control'><br>
                 Age:<br>
-                <input type="number" name="age" id="age" class='form-control'><br>
+                <input type="text" name="age" id="age" class='form-control'><br>
                 Super Power:<br>
                 <input type="text" name="power" id="power" class='form-control'><br>
                 <br>
-                <button type="submit" class="btn btn-danger btn-block" id='submit' data-toggle='modal' data-target='#myModal'>Submit</button>
-            <!--</form>-->
+                <h3>You enjoy wearing a cape?</h3>
+                <select id="q1">
+                    <option value="" selected>Select answer</option>
+                    <option value="1">1(strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+                <h3>You enjoy wearing a tights?</h3>
+                <select id="q2">
+                    <option value="" selected>Select answer</option>
+                    <option value="1">1(strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+                <br><br>
+                <button type="submit" class="btn btn-danger btn-block" id='do'>Submit</button>
+            </form>
         </section>
-
-        <section class="container" id="survey">
-            
-        </section>
-
-        <section class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1 class="modal-title">Your Match!</h1>
-                    </div>
-                    <div class="modal-body">
-                        <p id="matchName"></p>
-                        <img src="#" id="matchImg"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         
     </div>
 
@@ -65,14 +61,18 @@
 
     //$('#modal').hide();
 
-    $('#submit').on('click', () => {
+    $('#submit').on('click', function(req, res) {
 
         console.log('btn test');
         event.preventDefault();
 
+        var score = [];
+
+        scores.push($('#q1').val());
+        scores.push($('#q2').val());
 
 
-        var newSuper = {
+        var newSuper = /*req.body;*/{
 
             name: $('#name').val().trim(),
 
@@ -80,28 +80,21 @@
 
             age: $('#age').val().trim(),
 
-            power: $('#power').val().trim()
+            power: $('#power').val().trim(),
 
-        }
+            scores: score
+
+        };
 
         var url = window.locatoin.origin;
-        //$('#modal').show();
 
         $.post(url + '/api/add', newSuper)
 
             .done((data) => {
 
-            $('#matchName').text(data.alias);
+                console.log(data);
 
-            $('#myModal').modal('toggle');
-
-            //$('#modal-i').attr('src', data.photo);
-
-            console.log(data);
-        
-            /*$('#modal-p').append(newSuper.name + '\n' + 
-                newSuper.alia + '\n' + newSuper.age + '\n' + 
-                newSuper.power);*/
+                $('#page').html(data);
 
         });
 
