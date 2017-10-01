@@ -20,7 +20,7 @@ function apiR(app, __dirname) {
 
         var newSuper = req.body;
 
-        console.log(newSuper);
+        //console.log(newSuper);
 
         supers.push(newSuper);
 

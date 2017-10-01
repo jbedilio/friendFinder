@@ -5,7 +5,10 @@ var supers = [
                 alias:   'batman',
                 age:      30,
                 power:   'martial arts & tech gadgets',
-                scores:  [ 3, 3]
+                scores:  [ 
+                    3,
+                    3
+                ]
             }
 ];
 
