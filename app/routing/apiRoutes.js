@@ -6,7 +6,9 @@ var path = require('path');
 
 var app = express();
 
-var supers = require('./../data/friends.js');
+var friends = require('./../data/friends.js');
+
+var results = [];
 
 function apiR(app, __dirname, supers) {
 
@@ -20,11 +22,38 @@ function apiR(app, __dirname, supers) {
 
         var newSuper = req.body;
 
-        //console.log(newSuper);
+        results.push(newSuper);
 
-        supers.push(newSuper);
+        console.log('1', results);
 
-        res.send(supers);
+        console.log('2', newSuper);
+
+
+        for(var i = 0; i < friends.length; i++) {
+
+            var supersArr = [];
+
+            for(var j = 0; j < friends[i].scores.length; j++) {
+                
+                //var gap = 0;
+
+                gap = Math.abs(newSuper.scores[j] - supers[i].scores[j]);
+
+                supersArr.push(gap);
+
+            }
+        console.log('3', newSuper);
+
+        supers.push(results);
+
+        res.json(supers);
+
+        }
+
+        supersArr.sort((x, y) => { return x - y });
+
+        var superMatch = supersArr[0];
+
     });
 
     

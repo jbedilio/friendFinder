@@ -6,9 +6,9 @@ var path = require('path');
 
 var app = express();
 
-var supers = require('./../data/friends.js');
+var friends = require('./../data/friends.js');
 
-function htmlR(app, __dirname) {
+function htmlR(app, __dirname, supers) {
 
     app.get('/', (req, res) => {
 

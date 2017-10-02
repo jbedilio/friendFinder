@@ -30,7 +30,6 @@
                     <input type="text" name="power" id="power" class="form-control"><br>
                     <br>
                     <h3>You enjoy wearing a cape?</h3><br>
-                    Scores:
                     <select id="q1">
                         <option value="">Select option</option>
                         <option value="1">1(strongly agree)</option>
@@ -39,7 +38,7 @@
                         <option value="4">4</option>
                         <option value="5">5 (strongly disagree)</option>
                     </select>
-                    <!--<h3>You enjoy wearing a tights?</h3><br>
+                    <h3>You enjoy wearing a tights?</h3><br>
                     <select id="q2">
                         <option value="" selected>Select answer</option>
                         <option value="1">1(strongly agree)</option>
@@ -47,9 +46,9 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5 (strongly disagree)</option>
-                    </select>-->
+                    </select>
                 <br><br>
-                <button class="btn btn-danger btn-block" id="submit">Submit</button>
+                <button type="button" class="btn btn-danger btn-block" id="submit">Submit</button>
             <!--</form>-->
         </section>
         
@@ -68,10 +67,10 @@
 
         event.preventDefault();
 
-        //var score = [];
+        var score = [];
 
-        //score.push($('#q1').val());
-        //score.push($('#q2').val());
+        score.push($('#q1').val());
+        score.push($('#q2').val());
 
 
         var newSuper = /*req.body;*/{
@@ -84,7 +83,7 @@
 
             power: $('#power').val().trim(),
 
-            scores: $('#q1').val()
+            scores: score
 
         };
 
@@ -94,7 +93,7 @@
 
             console.log(data);
 
-            $('#page').html(data);
+            $('#page').html(data[0].alias);
 
         });
 
