@@ -8,7 +8,7 @@ var app = express();
 
 var supers = require('./../data/friends.js');
 
-function apiR(app, __dirname) {
+function apiR(app, __dirname, supers) {
 
     app.get('/api/supers', (req, res) => {
         
@@ -24,7 +24,7 @@ function apiR(app, __dirname) {
 
         supers.push(newSuper);
 
-        res.json(newSuper);
+        res.send(supers);
     });
 
     

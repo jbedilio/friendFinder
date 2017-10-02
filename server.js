@@ -20,7 +20,7 @@ htmlR(app, __dirname);
 
 var apiR = require('./app/routing/apiRoutes.js');
 
-apiR(app, __dirname);
+apiR(app, __dirname, supers);
 
 
 app.listen(PORT, () => {
