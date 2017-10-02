@@ -45,19 +45,19 @@ function apiR(app, __dirname, supers) {
 
             var gap = 0;
 
-            for(var k = 0; k < gapArr.length; k++) {
+            for(var k = 0; k < friends[i].scores.length; k++) {
 
-                supersArr.push(gap += gapArr[k]);
+                gap += friends[i].scores[j];
             }
 
-            supersArr.sort((x, y) => { return x - y });
+            gapArr.sort((x, y) => { return x - y });
 
             console.log('3', newSuper);
-        }
+        
 
-        //var superMatch = supersArr[0].name;
+       // var superMatch = supersArr[0];
         //console.log(superMatch);
-
+    }
         supers.push(newSuper);
 
         res.json(supers);
