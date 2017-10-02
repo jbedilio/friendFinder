@@ -37,23 +37,28 @@ function apiR(app, __dirname, supers) {
                 
                 //var gap = 0;
 
-                gap = Math.abs(newSuper.scores[j] - supers[i].scores[j]);
+                gap = Math.abs(newSuper.scores[j] - friends[i].scores[j]);
 
                 supersArr.push(gap);
 
+                console.log(gap);
+
             }
-        console.log('3', newSuper);
 
-        supers.push(results);
+            supersArr.sort((x, y) => { return x - y });
 
-        res.json(supers);
+            console.log('3', newSuper);
+
+            //supers.push(newSuper);
+
+            res.json(supers);
 
         }
 
-        supersArr.sort((x, y) => { return x - y });
+        
 
         var superMatch = supersArr[0];
-
+        console.log(superMatch);
     });
 
     
