@@ -28,45 +28,39 @@ function apiR(app, __dirname, supers) {
 
         console.log('2', newSuper);
 
-
         for(var i = 0; i < friends.length; i++) {
 
-            var supersArr = [];
+            var gapArr = [];
 
             for(var j = 0; j < friends[i].scores.length; j++) {
-                
-                var gap = 0;
 
                 gapDiff = Math.abs(newSuper.scores[j] - friends[i].scores[j]);
 
-                supersArr.push(gapDiff);
+                gapArr.push(gapDiff);
 
                 console.log(gapDiff);
-
             }
 
-            for(var k = 0; k < supersArr.length; k++) {
+            var supersArr = [];
 
-                gap += supersArr[k];
+            var gap = 0;
 
+            for(var k = 0; k < gapArr.length; k++) {
 
-
+                supersArr.push(gap += gapArr[k]);
             }
 
             supersArr.sort((x, y) => { return x - y });
 
             console.log('3', newSuper);
-
-            //supers.push(newSuper);
-
-            res.json(supers);
-
         }
 
-        
+        //var superMatch = supersArr[0].name;
+        //console.log(superMatch);
 
-        var superMatch = supersArr[0].name;
-        console.log(superMatch);
+        supers.push(newSuper);
+
+        res.json(supers);
     });
 
     
