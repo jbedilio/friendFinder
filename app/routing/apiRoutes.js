@@ -34,6 +34,8 @@ function apiR(app, __dirname, supers) {
 
             for(var j = 0; j < friends[i].scores.length; j++) {
 
+                var gap = 0;
+
                 gapDiff = Math.abs(newSuper.scores[j] - friends[i].scores[j]);
 
                 gapArr.push(gapDiff);
@@ -42,8 +44,6 @@ function apiR(app, __dirname, supers) {
             }
 
             var supersArr = [];
-
-            var gap = 0;
 
             for(var k = 0; k < friends[i].scores.length; k++) {
 
