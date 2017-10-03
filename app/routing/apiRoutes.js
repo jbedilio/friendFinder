@@ -26,33 +26,39 @@ function apiR(app, __dirname, supers) {
 
         console.log('1', results);
 
-        console.log('2', newSuper);
+        //console.log('2', newSuper);
 
         for(var i = 0; i < friends.length; i++) {
 
             var gapArr = [];
 
-            for(var j = 0; j < friends[i].scores.length; j++) {
+            var gap = 0;
 
-                var gap = 0;
+            for(var j = 0; j < friends[i].scores.length; j++) {
 
                 gapDiff = Math.abs(newSuper.scores[j] - friends[i].scores[j]);
 
+                //console.log(, friends[i].scores[j]);
+
                 gapArr.push(gapDiff);
 
-                console.log(gapDiff);
-            }
+                console.log('gapDiff', gapDiff);
 
-            var supersArr = [];
+                var supersArr = [];
 
-            for(var k = 0; k < friends[i].scores.length; k++) {
+                for(var k = 0; k < friends[i].scores.length; k++) {
 
-                gap += friends[i].scores[j];
+                    gap = parseInt(gap) + parseInt(friends[i].scores[j]);
+
+                    console.log('gap', gap);
+                    console.log('friends[i].scores[j]', friends[i].scores[j]);
+                }
+
             }
 
             gapArr.sort((x, y) => { return x - y });
 
-            console.log('3', newSuper);
+            //console.log('3', newSuper);
         
 
        // var superMatch = supersArr[0];
