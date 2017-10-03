@@ -28,7 +28,7 @@
                     <input type="text" name="age" id="age" class="form-control"><br>
                     Super Power:<br>
                     <input type="text" name="power" id="power" class="form-control"><br>
-                    Super Pic:
+                    Super Selfie:
                     <input type="text" name="pic" id="pic" class="form-control"><br>
                     <br>
                     <h3>You enjoy wearing a cape?</h3><br>
@@ -110,6 +110,18 @@
         
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content text-center">
+            <span class="close">&times;</span>
+            <h1>Your Super Match Is . . .</h1>
+            <div class="text-center" id="match"></div> 
+        </div>
+
+    </div>
+
 
 
 
@@ -127,7 +139,12 @@
 
         score.push($('#q1').val());
         score.push($('#q2').val());
-
+        score.push($('#q3').val());
+        score.push($('#q4').val());
+        score.push($('#q5').val());
+        score.push($('#q6').val());
+        score.push($('#q7').val());
+        score.push($('#q8').val());
 
         var newSuper = /*req.body;*/{
 
@@ -147,9 +164,41 @@
 
         $.post('/api/add', newSuper).done(function(data) {
 
+            var portrait = $('<img>').attr('src', data[1]);
+
+            var name = $('<h1>').text(data[0]);
+
+            $('#page').hide();
+
+            $('#myModal').show();
+
+            portrait.append(name);
+
+            $('#match').append(portrait);
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+                $('#page').show();
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    $('#page').show();
+                }
+            }
+
             console.log(data);
 
-            $('#page').html(data);
+            //$('#page').html(data);
 
         });
 

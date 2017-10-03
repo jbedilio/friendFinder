@@ -62,13 +62,13 @@ function apiR(app, __dirname, supers) {
 
                 superMatch = friends[i].alias;
 
-                //superImg = friends[i].pic
+                superSelfie = friends[i].pic
             }
         }
     
         superArr.push(superMatch);
 
-        //superArr.push(superImg);
+        superArr.push(superSelfie);
 
         supers.push(newSuper);
 
