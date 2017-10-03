@@ -110,17 +110,18 @@
         
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+        <section class='container text-center'>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="height: 600px; width: 500px;">
 
-        <!-- Modal content -->
-        <div class="modal-content text-center">
-            <span class="close">&times;</span>
-            <h1>Your Super Match Is . . .</h1>
-            <div class="text-center" id="match"></div> 
-        </div>
+                <!-- Modal content -->
+                <div class="modal-content text-center">
+                    <span class="close">&times;</span>
+                    <h1 id="modal-head"></h1>
+                    <div class="text-center" id="match"></div> 
+                </div>
 
-    </div>
+            </div>
 
 
 
@@ -166,15 +167,17 @@
 
             var portrait = $('<img>').attr('src', data[1]);
 
-            var name = $('<h1>').text(data[0]);
+            
 
             $('#page').hide();
 
             $('#myModal').show();
 
-            portrait.append(name);
+            $('#page').empty();;
 
             $('#match').append(portrait);
+
+            $('#modal-head').html('Your Super Match is ' + data[0]);
 
             // Get the modal
             var modal = document.getElementById('myModal');
@@ -197,11 +200,7 @@
             }
 
             console.log(data);
-
-            //$('#page').html(data);
-
         });
-
 });
 
 
