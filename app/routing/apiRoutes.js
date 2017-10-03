@@ -20,13 +20,19 @@ function apiR(app, __dirname, supers) {
 
     app.post('/api/add', (req, res) => {
 
+        var bar = 100;
+
+        var superMatch = "";
+
+        var superImg = "";
+
+        var superArr = [];
+
         var newSuper = req.body;
 
         results.push(newSuper);
 
         console.log('1', results);
-
-        //console.log('2', newSuper);
 
         for(var i = 0; i < friends.length; i++) {
 
@@ -36,40 +42,39 @@ function apiR(app, __dirname, supers) {
 
             for(var j = 0; j < friends[i].scores.length; j++) {
 
-                gapDiff = Math.abs(newSuper.scores[j] - friends[i].scores[j]);
-
-                //console.log(, friends[i].scores[j]);
+                gapDiff = Math.abs(parseFloat(newSuper.scores[j] - friends[i].scores[j]));
 
                 gapArr.push(gapDiff);
 
                 console.log('gapDiff', gapDiff);
-
-                var supersArr = [];
-
-                for(var k = 0; k < friends[i].scores.length; k++) {
-
-                    gap = parseInt(gap) + parseInt(friends[i].scores[j]);
-
-                    console.log('gap', gap);
-                    console.log('friends[i].scores[j]', friends[i].scores[j]);
-                }
-
             }
 
-            gapArr.sort((x, y) => { return x - y });
+            for (var k = 0; k < gapArr.length; k++) {
 
-            //console.log('3', newSuper);
-        
+                gap += gapArr[k];
 
-       // var superMatch = supersArr[0];
-        //console.log(superMatch);
-    }
+                console.log('gap', gap);
+            }
+
+            if (gap < bar){
+                
+                bar = gap;
+
+                superMatch = friends[i].alias;
+
+                //superImg = friends[i].pic
+            }
+        }
+    
+        superArr.push(superMatch);
+
+        //superArr.push(superImg);
+
         supers.push(newSuper);
 
-        res.json(supers);
+        res.json(superArr);
     });
 
-    
     console.log("yo!");
 };
 
