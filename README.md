@@ -1,5 +1,5 @@
 # superHeroFriendFinder
-Super Hero Friend Finder is an application built with JavaScript and JQuery in Node.js and with an Express.js server.  The client facing view is rendered in HTML.  The result is an entertaining application that matches the user with a super hero who's personality most closely resembles the user.  The application is deployed on Heroku.
+Super Hero Friend Finder is an application built with JavaScript and JQuery in Node.js and with an Express.js server.  The client facing view is rendered in HTML.  The result is an entertaining application that matches the user with a super hero whose personality most closely resembles the user.  The application is deployed on Heroku.
 https://peaceful-temple-65822.herokuapp.com/
 
           Checking out the data on the API json objects page
