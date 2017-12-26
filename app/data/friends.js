@@ -3,7 +3,7 @@ var supers = [
 {
     name:    'bruce wayne',
     alias:   'batman',
-    age:      32,
+    age:      35,
     power:   'martial arts & tech gadgets',
     pic:    'https://www.desktopbackground.org/t/2013/10/23/658531_the-dark-knight-rises-hd-wallpapers-free-download-batman_4256x2832_h.jpg',
     scores:  [ 
@@ -20,7 +20,7 @@ var supers = [
 {   
     name:     'clark kent',
     alias:    'superman',
-    age:       30,
+    age:       32,
     power:    'strength, speed, flight',
     pic:      'https://media.melty.fr/article-3302985-ajust_1020/j-j-abrams-va-t-il-realiser-man-of-steel.jpg',
     scores:    [
@@ -50,6 +50,14 @@ var supers = [
         2,
         5
     ]
+},
+{
+    name:      'tony stark',
+    alias:     'iron man',
+    age:        37,
+    power:     'iron man suit, flight, speed, strenth, weapons',
+    pic:       '#',
+    scores:    []
 }
 ];
 
