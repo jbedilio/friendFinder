@@ -57,7 +57,9 @@ var supers = [
     age:        37,
     power:     'iron man suit, flight, speed, strenth, weapons',
     pic:       '#',
-    scores:    []
+    scores:    [
+        
+    ]
 }
 ];
 
