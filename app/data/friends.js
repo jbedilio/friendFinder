@@ -58,7 +58,14 @@ var supers = [
     power:     'iron man suit, flight, speed, strenth, weapons',
     pic:       '#',
     scores:    [
-        
+        5,
+        5,
+        5,
+        1,
+        5,
+        5,
+        5
+
     ]
 }
 ];
