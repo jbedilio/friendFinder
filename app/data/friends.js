@@ -56,7 +56,7 @@ var supers = [
     alias:     'iron man',
     age:        37,
     power:     'iron man suit, flight, speed, strenth, weapons',
-    pic:       '#',
+    pic:       'https://blogs-images.forbes.com/alishagrauso/files/2016/05/Iron-Man-Robert-Downey-Jr-Interview-1200x600.jpg?width=960',
     scores:    [
         5,
         5,
