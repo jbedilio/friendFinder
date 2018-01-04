@@ -1,8 +1,8 @@
 var supers = [
         
 {
-    name:    'bruce wayne',
-    alias:   'batman',
+    name:    'Bruce Wayne',
+    alias:   'Batman',
     age:      35,
     power:   'martial arts & tech gadgets',
     pic:    'https://www.desktopbackground.org/t/2013/10/23/658531_the-dark-knight-rises-hd-wallpapers-free-download-batman_4256x2832_h.jpg',
@@ -18,8 +18,8 @@ var supers = [
     ]
 },
 {   
-    name:     'clark kent',
-    alias:    'superman',
+    name:     'Clark Kent',
+    alias:    'Superman',
     age:       32,
     power:    'strength, speed, flight',
     pic:      'https://media.melty.fr/article-3302985-ajust_1020/j-j-abrams-va-t-il-realiser-man-of-steel.jpg',
@@ -35,7 +35,7 @@ var supers = [
     ]
 },
 {   
-    name:      'peter parker',
+    name:      'Peter Parker',
     alias:     'spiderman',
     age:        21,
     power:     'strength, speed, sense, webbing, climbing',
@@ -52,8 +52,8 @@ var supers = [
     ]
 },
 {
-    name:      'tony stark',
-    alias:     'iron man',
+    name:      'Tony Stark',
+    alias:     'Iron Man',
     age:        37,
     power:     'iron man suit, flight, speed, strenth, weapons',
     pic:       'https://blogs-images.forbes.com/alishagrauso/files/2016/05/Iron-Man-Robert-Downey-Jr-Interview-1200x600.jpg?width=960',
