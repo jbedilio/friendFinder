@@ -36,7 +36,7 @@ var supers = [
 },
 {   
     name:      'Peter Parker',
-    alias:     'spiderman',
+    alias:     'Spiderman',
     age:        21,
     power:     'strength, speed, sense, webbing, climbing',
     pic:       'http://rollingstone.uol.com.br/media/images/medium/2013/02/26/img-1012640-io-espetacular-homem-aranha-2i-600x600.jpg',
