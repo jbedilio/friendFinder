@@ -55,7 +55,7 @@ var supers = [
     name:      'Tony Stark',
     alias:     'Iron Man',
     age:        37,
-    power:     'iron man suit, flight, speed, strenth, weapons',
+    power:     'iron man suit of armor, flight, speed, strenth, weapons',
     pic:       'https://blogs-images.forbes.com/alishagrauso/files/2016/05/Iron-Man-Robert-Downey-Jr-Interview-1200x600.jpg?width=960',
     scores:    [
         5,
@@ -67,6 +67,12 @@ var supers = [
         5
 
     ]
+},
+{
+    name:       'Diana Prince',
+    alias:      'Wonder Woman',
+    age:         27,
+    power:      ''
 }
 ];
 
