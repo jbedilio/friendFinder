@@ -75,7 +75,14 @@ var supers = [
     power:      'speed, strength, leaping, laso of truth',
     pic:        'https://nerdist.com/wp-content/uploads/2017/10/wonder_woman_4k_8k_movie-3840x2160.jpg',
     scores:     [
-        
+        5,
+        5,
+        5,
+        2,
+        3,
+        1,
+        5,
+        3
     ]
 }
 ];
