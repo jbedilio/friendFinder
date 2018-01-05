@@ -73,7 +73,7 @@ var supers = [
     alias:      'Wonder Woman',
     age:         27,
     power:      'speed, strength, leaping, laso of truth',
-    pic:        '#',
+    pic:        'https://nerdist.com/wp-content/uploads/2017/10/wonder_woman_4k_8k_movie-3840x2160.jpg',
     scores:     [
         
     ]
