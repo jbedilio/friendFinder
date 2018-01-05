@@ -6,7 +6,7 @@ var supers = [
     age:      35,
     power:   'martial arts & tech gadgets',
     pic:    'https://www.desktopbackground.org/t/2013/10/23/658531_the-dark-knight-rises-hd-wallpapers-free-download-batman_4256x2832_h.jpg',
-    scores:  [ 
+    scores:  [
         2,
         1,
         2,
@@ -22,8 +22,8 @@ var supers = [
     alias:    'Superman',
     age:       32,
     power:    'strength, speed, flight, x-ray vision, heat-ray vision',
-    pic:      'https://media.melty.fr/article-3302985-ajust_1020/j-j-abrams-va-t-il-realiser-man-of-steel.jpg',
-    scores:    [
+    pic:      'https://i.dailymail.co.uk/i/pix/2017/10/10/00/452D173F00000578-4964532-image-a-46_1507592609515.jpg',                                     //'https://media.melty.fr/article-3302985-ajust_1020/j-j-abrams-va-t-il-realiser-man-of-steel.jpg'//,
+    scores:   [
         1,
         1,
         1,
