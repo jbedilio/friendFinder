@@ -87,7 +87,9 @@ var supers = [
     ]
 },
 {
-    name:
+    name:       '#',
+    alias:      '#',
+    age:        '#',
 }
 ];
 
