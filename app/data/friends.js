@@ -74,7 +74,6 @@ var supers = [
     age:         27,
     power:      'speed, strength, leaping, laso of truth',
     pic:        'http://i.dailymail.co.uk/i/pix/2017/10/10/00/452D173F00000578-4964532-image-a-46_1507592609515.jpg',
-    //'https://nerdist.com/wp-content/uploads/2017/10/wonder_woman_4k_8k_movie-3840x2160.jpg',//
     scores:     [
         5,
         5,
@@ -93,7 +92,7 @@ var supers = [
     power:      '#',
     pic:        '#',
     scores:     [
-        
+
     ]
 }
 ];
