@@ -86,10 +86,10 @@ var supers = [
     ]
 },
 {
-    name:       '#',
-    alias:      '#',
-    age:        '#',
-    power:      '#',
+    name:       'Barry Allen',
+    alias:      'The Flash',
+    age:         23,
+    power:      'super sonic speed',
     pic:        '#',
     scores:     [
 
