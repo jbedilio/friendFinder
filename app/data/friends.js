@@ -90,7 +90,7 @@ var supers = [
     alias:      'The Flash',
     age:         23,
     power:      'super sonic speed',
-    pic:        '#',
+    pic:        'https://images.moviepilot.com/image/upload/c_fill,h_470,q_auto:good,w_620/ifzqxffjuqzgekt3yo1n.jpg',
     scores:     [
 
     ]
