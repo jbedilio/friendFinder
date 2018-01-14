@@ -92,7 +92,8 @@ var supers = [
     power:      'super sonic speed',
     pic:        'https://images.moviepilot.com/image/upload/c_fill,h_470,q_auto:good,w_620/ifzqxffjuqzgekt3yo1n.jpg',
     scores:     [
-
+        5,
+        1,
     ]
 }
 ];
