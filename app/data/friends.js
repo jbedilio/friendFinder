@@ -106,11 +106,6 @@ var supers = [
     name:       
     alias:      
     age:        
-    power:      
-    pic:        
-    scores:     [
-        
-    ]
 }
 ];
 
