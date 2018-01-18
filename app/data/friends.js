@@ -107,7 +107,7 @@ var supers = [
     alias:      'Wolverine',
     age:        'unknown',
     power:      'razor sharp retractable claws, immediate regenration, increased strenght & speed, animal heightend senses',
-    pic:        '',
+    pic:        'https://media.gq.com/photos/58b9fdae803bdb766dd69ef9/3:2/w_880/wolverine.jpg',
     scores: [
         5,
         5,
