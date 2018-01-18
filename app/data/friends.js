@@ -101,6 +101,23 @@ var supers = [
         4,
         5
     ]
+},
+{
+    name:       'Logan',
+    alias:      'Wolverine',
+    age:        'unknown',
+    power:      'razor sharp retractable claws, immediate regenration, increased strenght & speed, animal heightend senses',
+    pic:        '',
+    scores: [
+        5,
+        1,
+        5,
+        1,
+        5,
+        5,
+        4,
+        5
+    ]
 }
 ];
 
