@@ -118,6 +118,12 @@ var supers = [
         1,
         1
     ]
+},
+{
+    name:       '',
+    alias:      '',
+    age:        '',
+
 }
 ];
 
