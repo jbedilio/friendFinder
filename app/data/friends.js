@@ -106,7 +106,7 @@ var supers = [
     name:       'Logan',
     alias:      'Wolverine',
     age:        'unknown',
-    power:      'razor sharp retractable claws, immediate regenration, increased strenght & speed, animal heightend senses',
+    power:      'razor sharp retractable claws, immediate regenration, increased strenght & speed, heightend senses',
     pic:        'https://media.gq.com/photos/58b9fdae803bdb766dd69ef9/3:2/w_880/wolverine.jpg',
     scores:     [
         5,
@@ -120,10 +120,10 @@ var supers = [
     ]
 },
 {
-    name:       '',
-    alias:      '',
-    age:        '',
-    power:      '',
+    name:       'Elektra Notchios',
+    alias:      'Elektra',
+    age:        '25',
+    power:      'martial arts/ninja, assassin, increased speed & coordination',
     pic:        '',
     scores:     [
 
