@@ -141,7 +141,7 @@ var supers = [
     alias:      'Harley Quinn',
     age:         30,
     power:      'psychotic & fearless, immune to many poisons/gasses, faster healing/regeneration, trained gymnast and psychiatrist',
-    pic:'https://images-na.ssl-images-amazon.com/images/M/MV5BNWVmZDlkMzYtZmUwMi00ZDEwLWFjMjQtMDdkOWNjNzczZTBhXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg',
+    pic:        'https://pbs.twimg.com/media/CxepS7lXEAAp2zP.jpg',
     scores:     [
         5,
         3,
