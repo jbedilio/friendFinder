@@ -137,10 +137,10 @@ var supers = [
     ]
 },
 {
-    name:       '',
-    alias:      '',
-    age:        '',
-    power:      '',
+    name:       'Dr. Harleen Frances Quinzel',
+    alias:      'Harley Quinn',
+    age:        '30',
+    power:      'psychotic & fearless, immune to many poisons/gasses, faster healing/regeneration, trained gymnast and psychiatrist',
     scores:     [
         
     ]
