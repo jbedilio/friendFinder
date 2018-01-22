@@ -122,7 +122,7 @@ var supers = [
 {
     name:       'Elektra Notchios',
     alias:      'Elektra',
-    age:        '25',
+    age:         25,
     power:      'martial arts/ninja, assassin, increased speed strength & coordination',
     pic:        'http://4.bp.blogspot.com/-2NpV3IkN_MA/UkjYILhiRMI/AAAAAAAAnZs/fvSpH4ECaSM/s1600/Elektra+cinemelodic+garner.jpg',
     scores:     [
