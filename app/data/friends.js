@@ -157,10 +157,17 @@ var supers = [
     name:       'Selina Kyle',
     alias:      'Cat Woman',
     age:         31,
-    power:      'martial artist/ninja, boxer, expert thief, lock-picking & hot-wiring, master of disguise & impersonater',
+    power:      'martial artist/ninja, boxer, expert thief, lock-picking & hot-wiring, master of disguise & impersonating identities',
     pic:        'https://i.pinimg.com/originals/a9/76/95/a976959edaa62fab574425adebc64f6d.jpg',
     scores:     [
-
+        5,
+        1,
+        5,
+        1,
+        5,
+        5,
+        1,
+        5
     ]
 }
 ];
