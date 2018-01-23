@@ -154,13 +154,13 @@ var supers = [
     ]
 },
 {
-    name:       '',
-    alias:      '',
-    age:        '',
+    name:       'Selina Kyle',
+    alias:      'Cat Woman',
+    age:        '31',
     power:      '',
     pic:        '',
     scores:     [
-        
+
     ]
 }
 ];
