@@ -156,9 +156,9 @@ var supers = [
 {
     name:       'Selina Kyle',
     alias:      'Cat Woman',
-    age:        '31',
-    power:      '',
-    pic:        '',
+    age:         31,
+    power:      'martial artist/ninja, boxer, expert thief, lock-picking & hot-wiring, master of disguise & able to impersonate/',
+    pic:        'https://i.pinimg.com/originals/a9/76/95/a976959edaa62fab574425adebc64f6d.jpg',
     scores:     [
 
     ]
