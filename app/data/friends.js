@@ -152,6 +152,16 @@ var supers = [
         1,
         3
     ]
+},
+{
+    name:       '',
+    alias:      '',
+    age:        '',
+    power:      '',
+    pic:        '',
+    scores:     [
+        
+    ]
 }
 ];
 
