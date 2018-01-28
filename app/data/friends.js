@@ -171,8 +171,8 @@ var supers = [
     ]
 },
 {
-    name:       '',
-    alias:      '',
+    name:       'Angelica Jones',
+    alias:      'Firestar',
     age:        '',
     power:      '',
     pic:        '',
