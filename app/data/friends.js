@@ -173,7 +173,7 @@ var supers = [
 {
     name:       'Angelica Jones',
     alias:      'Firestar',
-    age:        '32',
+    age:        '25',
     power:      '',
     pic:        '',
     scores:     [
